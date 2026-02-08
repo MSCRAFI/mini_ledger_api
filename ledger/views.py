@@ -30,4 +30,5 @@ class LedgerEntryViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         # filter so that users only see entries for their own customers
+        print(f"Current User: {self.request.user}") # Check your terminal output
         return LedgerEntry.objects.filter(customer__user=self.request.user).select_related('customer')
