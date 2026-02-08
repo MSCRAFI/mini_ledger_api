@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # External apps
     "rest_framework",
     "rest_framework_simplejwt",
+    "django_filters",
     # Local apps
     "users",
     "ledger",

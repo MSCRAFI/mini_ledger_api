@@ -25,6 +25,7 @@ from django.urls import include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('api/users/', include('users.urls')),
+    path('api/ledger/', include('ledger.urls')),
     # path("api/login/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     # path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]
